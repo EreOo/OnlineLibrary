@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5ecce5-228b-47b9-ae74-0b6e3d7f3445" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/masterdate/entities/AuthorEntity.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/masterdate/entities/AuthorEntity.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/masterdate/dao/impl/BookDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/masterdate/dao/impl/BookDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/masterdate/dao/interfaces/BookDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/masterdate/dao/interfaces/BookDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/flows/main.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/flows/main.xml" />
     </list>
     <ignored path="OnlineLibrary.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,12 +72,10 @@
       <file leaf-file-name="BookDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/masterdate/dao/impl/BookDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="67" column="5" selection-start-line="38" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="386">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -963,12 +957,12 @@
       <option name="presentableId" value="Default" />
       <updated>1473958333573</updated>
       <workItem from="1473958335307" duration="3646000" />
-      <workItem from="1473962601590" duration="8742000" />
+      <workItem from="1473962601590" duration="9359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12388000" />
+    <option name="totallyTimeSpent" value="13005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
@@ -1203,12 +1197,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/masterdate/dao/impl/BookDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="67" column="5" selection-start-line="38" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="386">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
           </folding>
         </state>
       </provider>

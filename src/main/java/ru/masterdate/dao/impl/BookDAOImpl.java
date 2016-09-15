@@ -2,10 +2,7 @@ package ru.masterdate.dao.impl;
 
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.DetachedCriteria;
-import org.hibernate.criterion.Order;
-import org.hibernate.criterion.ProjectionList;
-import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.*;
 import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -40,27 +37,32 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public List<BookEntity> getBooks() {
 
-        DetachedCriteria bookListCriteria = DetachedCriteria.forClass(BookEntity.class, "b");
-        createAliases(bookListCriteria);
-
-        List<BookEntity> books = createBookList(bookListCriteria);
-
-
-
+        List<BookEntity> books = createBookList(createBookCriteria());
         return books;
     }
 
     @Transactional
     @Override
     public List<BookEntity> getBooksAuthor(String author) {
-        return null;
+        List<BookEntity> books = createBookList(createBookCriteria().add(Restrictions.ilike("b.authorId", author, MatchMode.ANYWHERE)));
+        return books;
     }
 
 
+    @Transactional
     @Override
     public List<BookEntity> getBooks(String bookName) {
-        return null;
+        List<BookEntity> books = createBookList(createBookCriteria().add(Restrictions.ilike("b.name", bookName, MatchMode.ANYWHERE)));
+        return books;
     }
+
+
+    private DetachedCriteria createBookCriteria(){
+        DetachedCriteria bookListCriteria = DetachedCriteria.forClass(BookEntity.class, "b");
+        createAliases(bookListCriteria);
+        return bookListCriteria;
+    }
+
 
     private void createAliases(DetachedCriteria criteria) {
         criteria.createAlias("b.authorId", "authorId");

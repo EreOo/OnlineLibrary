@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="ru.masterdate.entities.AuthorEntity" table="author" schema="MyLibrary">
+    <class name="ru.masterdate.entities.AuthorEntity" table="author" schema="MyLibrary" >
         <id name="id" column="id"/>
         <property name="fullname" column="fullname"/>
         <property name="birthday" column="birthday"/>

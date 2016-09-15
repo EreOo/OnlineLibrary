@@ -3,6 +3,12 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
-    <view-state id="main"/>
+    <view-state id="main">
+
+        <!--<on-render>-->
+            <!--<evaluate expression="bookDAOImpl.book"></evaluate>-->
+        <!--</on-render>-->
+
+    </view-state>
 
 </flow>
